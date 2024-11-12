@@ -70,7 +70,7 @@ header img {
     width: 100%; 
 }
 
-.social-links span {
+.social-link {
     background-color: hsl(0, 0%, 20%);
     color: hsl(0, 0%, 100%);
     font-size: 14px;
@@ -86,10 +86,13 @@ header img {
     height: 30px; 
     transition: background-color 0.3s ease; 
     cursor: pointer;
+    text-decoration: none;
 }
 
-.social-links span:hover {
+.social-links :hover,
+.social-link:focus {
     background-color: hsl(75, 94%, 57%); 
-    color: hsl(0, 0%, 0%); /* Change la couleur du texte en noir lors du survol */
+    color: hsl(0, 0%, 0%); 
+    outline: none;
 }
 
